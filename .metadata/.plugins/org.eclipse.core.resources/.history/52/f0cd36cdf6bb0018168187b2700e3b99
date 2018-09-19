@@ -1,0 +1,5 @@
+package com.capgemini.bankapp.modal;
+
+public class BankAccount {
+
+}
