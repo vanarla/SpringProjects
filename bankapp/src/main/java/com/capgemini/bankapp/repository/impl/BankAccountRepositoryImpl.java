@@ -4,11 +4,13 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.capgemini.bankapp.exception.AccountNotFoundException;
+import com.capgemini.bankapp.modal.BankAccount;
 import com.capgemini.bankapp.repository.BankAccountRepository;
 import com.capgemini.bankapp.util.DatabaseUtil;
 
@@ -70,7 +72,31 @@ public double getBalance(long accountId) throws AccountNotFoundException, SQLExc
 
 	@Override
 	public boolean updateBalance(long accountId, double newBalance) {
-		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean addBankAcoount(BankAccount account) {
+		return false;
+	}
+
+	@Override
+	public BankAccount findBankAccountById(long accountId) {
+		return null;
+	}
+
+	@Override
+	public List<BankAccount> findAllBankAccounts() {
+		return null;
+	}
+
+	@Override
+	public BankAccount updateBankAccount(BankAccount account) {
+		return null;
+	}
+
+	@Override
+	public boolean deleteBankAccount(long accountId) {
 		return false;
 	}
 
